@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style type="text/css">
+		html {
+  min-height: 100%;/* fill the screen height to allow vertical alignement */
+  display: grid; /* display:flex works too since body is the only grid cell */
+}
+
+
+		body {
+			background-color: rgb(250, 215, 238);
+
+		margin: auto;
+		margin-top:0%;
+		position:center;
+         width: 400px;
+        height:370px; 
+        border:2px solid rgba(10, 10, 10, 0.5);
+        border-radius: (20px);
+        backdrop-filter:blur(20px);
+        box-shadow:0 0 30px rgba(0,0,0,.5);
+        display:inherit;
+        justify-content: center;
+        align-items: center;
+		}
+		form {
+			
+			border: 3px ;
+		background-color:azure;
+		
+			width: 400px;
+			margin: auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+            padding:40px;
+		}
+		
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #8f8787;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4ca3af;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.icons {
+            color: rgb(255, 0, 170);
+        }
+        i {
+            text-shadow: 2px 4px 6px rgb(247, 243, 238);
+        }
+        .fa{
+            font-size: 50px;
+        }
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/favicon-32x32.png">
+</head>
+<body>
+
+<form>
+	<div class="row">
+		<div class="column">
+		  <img src="/lo.webp" style="width:100%">
+		</div>
+		<div class="column">
+	<label for="username"><b>Username</b></label>	<i class="fa fa-address-book"></i>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>	<i class="fa fa-lock"></i>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+
+    <button type="submit"><a href="index.html"  >Login</button>
+    <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>
